@@ -1,9 +1,9 @@
 import sys
 
-def get_divisors(n):
-    divisors = [i for i in range(1, n + 1) if n % i == 0]
-    return divisors
+number = int(sys.argv[1])
 
-if __name__ == "__main__":
-    n = int(sys.argv[1])
-    print(" ".join(map(str, get_divisors(n))))
+for i in range(1, number + 1):
+    if number % i == 0:
+        print(i, end=" ")
+
+print()
